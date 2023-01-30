@@ -25,6 +25,10 @@
             <input type="text" v-model="empName"/>
             <button type="button" class="btn btn-outline-secondary makeSpace" @click="doAlert('Hello~', $event)">alert</button>
 
+            <br/>
+            <%-- ${pageContext.request.contextPath}--%>
+            <a href="<%=request.getContextPath()%>/MultiThreadTestServlet?action=toMultiThreadPage">測試Ajax多執行續存取Servlet</a>
+
             <div class="row">
                 <div class="col-md-3" :class="{ 'myBorder': isActiveBorder }">
                     One of three columns
