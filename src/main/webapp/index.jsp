@@ -28,6 +28,14 @@
             <br/>
             <%-- ${pageContext.request.contextPath}--%>
             <a href="<%=request.getContextPath()%>/MultiThreadTestServlet?action=toMultiThreadPage">測試Ajax多執行續存取Servlet</a>
+            <br/>
+            <a href="<%=request.getContextPath()%>/DeptServlet.do?action=toDeptPage_dispatcher">跳轉(過Controller + dispatcher)-Dept頁面</a>
+            <br/>
+            <a href="<%=request.getContextPath()%>/DeptServlet.do?action=queryAllDept">跳轉(過Controller + queryAllDept)-Dept頁面</a>
+            <br/>
+            <a href="<%=request.getContextPath()%>/DeptServlet.do?action=toDeptPage_redirect">跳轉(過Controller + redirect)-Dept頁面</a>
+            <br/>
+            <a href="<%=request.getContextPath()%>/dept/dept.jsp">跳轉(直接)-Dept頁面</a>
 
             <div class="row">
                 <div class="col-md-3" :class="{ 'myBorder': isActiveBorder }">

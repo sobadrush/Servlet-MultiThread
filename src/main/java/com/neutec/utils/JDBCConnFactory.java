@@ -13,7 +13,8 @@ public class JDBCConnFactory {
     private JDBCConnFactory() {
         try {
             Class.forName("org.sqlite.JDBC");
-            String connStr = "jdbc:sqlite:" + System.getProperty("user.dir") + "/EmpDeptSqliteDB.db";
+            // String connStr = "jdbc:sqlite:" + System.getProperty("user.dir") + "/EmpDeptSqliteDB.db";
+            String connStr = "jdbc:sqlite:" + "E:/workspace_intellj/Servlet-MultiThread" + "/EmpDeptSqliteDB.db";
             this.conn = DriverManager.getConnection(connStr);
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
